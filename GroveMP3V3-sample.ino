@@ -24,7 +24,7 @@ void setup()
 
   Serial.println("Play");
   GroveMP3V3_IndexPlay(3);
-  //while (GroveMP3V3_QueryCurrentOperationState() == 1) delay(3000);
+  //while (GroveMP3V3_QueryCurrentOperationState() == 1) delay(3000);//再生終了は左記のループでチェック
   delay(10000);
 
   Serial.println("Pause");
