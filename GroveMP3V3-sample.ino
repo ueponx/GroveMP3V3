@@ -78,7 +78,7 @@ void GroveMP3V3_FilePlay(U8 *parameter, int parameterSize)
 
 void GroveMP3V3_DirIndexPlay(U8 *parameter, int parameterSize, int index)
 {
-  if (parameterSize > 5) abort();
+  if (parameterSize != 5) abort();
   char param[parameterSize+2];
   for(int i=0; i<parameterSize; i++) param[i] = parameter[i];
   param[parameterSize+0] = index / 256;
